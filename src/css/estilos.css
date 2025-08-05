@@ -1,0 +1,131 @@
+.container {
+    height: 100vh;
+    background: url(../imagem/fita-de-fundo.jpg) center center / contain ;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    /* align-items: center;
+    gap: 40px; */
+}
+
+/* .container {
+    display: flex;
+} */
+
+/* .container img{
+    /* background-image: url(../imagem/fita-de-fundo.jpg); */
+    /* background-position: center; 
+    width: 100%;
+    height: 100vh;
+}
+ */
+.informacoes {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    gap: 15px;
+    /* margin-left: 55px;  */
+   /*  flex: 1.5; */
+}
+
+.informacoes h1 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.informacoes p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario {
+    /* background-color: #ffffff ;
+    width: 340px; 
+    height: 378px; */
+   /*  padding: 20px; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center; 
+    align-items: center;
+   /*  flex: 1; */
+}
+
+#formulario {
+    background-color: #ffffff;
+    width: 340px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#formulario input,
+#formulario textarea,
+#formulario button {
+    /* font-weight: 700;
+    font-size: 15px; */
+    border-radius: 5px;
+    border: 1px solid #000000;
+
+    padding: 10px 0 10px 10px;
+    /* margin-bottom: 15px;  */
+    margin: 15px 20px;
+
+
+    /* margin-bottom: 15px; */
+    /* margin: 25px 15px; */
+}
+
+#formulario textarea {
+    resize: none;
+    height: 100%;
+}
+
+#formulario ::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#formulario p {
+    /* font-weight: 400; */
+    font-size: 15px;
+    margin: 10px 15px;
+}
+
+#formulario button {
+    font-weight: 700;
+    background-color: #3ccc87;
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* mudando o input na validação. . . */
+
+.input-erro {
+    border: 1px solid #f52e25;
+}
+
+.input-correto {
+    border: 1px solid #00c220;
+}
+/* .informacoes {
+    /* width: 300px; */
+    /* color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
+@media (max-width: 756px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./src/css/reset.css">
+<link rel="stylesheet" href="./src/css/estilos.css">
+    <title>Exercício 7: Validando Formulário</title>
+</head>
+<body> 
+    
+    <main class="container"> 
+           <!--  <img src="./src/imagem/fita-de-fundo.jpg" alt="foto fundo">
+ -->
+            <div class="informacoes">
+                <h1>Ficou com dúvida? <br>
+                    Nos mande uma mensagem!
+                </h1>
+
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+
+            <div class="formulario">
+                <form action="" id="formulario">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo *">
+
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Email *">
+
+                    <label for="telefone"></label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Telefone *">
+
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+
+                    <p>*campos obrigatórios</p>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

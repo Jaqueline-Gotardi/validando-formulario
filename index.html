@@ -10,13 +10,12 @@
 
 <link rel="stylesheet" href="./src/css/reset.css">
 <link rel="stylesheet" href="./src/css/estilos.css">
-    <title>Exercício 7: Validando Formulário</title>
+    <title>QUEST JS INTERMEDIÁRIO: Validando Formulário</title>
 </head>
 <body> 
     
     <main class="container"> 
-           <!--  <img src="./src/imagem/fita-de-fundo.jpg" alt="foto fundo">
- -->
+
             <div class="informacoes">
                 <h1>Ficou com dúvida? <br>
                     Nos mande uma mensagem!
@@ -27,18 +26,28 @@
 
             <div class="formulario">
                 <form action="" id="formulario">
-                    <label for="nome"></label>
+                    
+                    <div class="campo">
                     <input type="text" id="nome" name="nome" placeholder="Nome completo *">
+                    <p class="mensagem-erro">campo obrigatório</p>
+                    </div>
 
-                    <label for="email"></label>
+                    <div class="campo">
                     <input type="text" id="email" name="email" placeholder="Email *">
+                    <p class="mensagem-erro">campo obrigatório</p>
+                    </div>
 
-                    <label for="telefone"></label>
+                    <div class="campo">
                     <input type="text" id="telefone" name="telefone" placeholder="Telefone *">
+                    <p class="mensagem-erro">campo obrigatório</p>
+                    </div>
 
+                    <div class="campo">
                     <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                    <p class="mensagem-erro">campo obrigatório</p>
+                    </div>
 
-                    <p>*campos obrigatórios</p>
+                    <span>*campos obrigatórios</span>
 
                     <button type="submit">Enviar</button>
                 </form>

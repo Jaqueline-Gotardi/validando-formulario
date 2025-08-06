@@ -1,26 +1,12 @@
 .container {
     height: 100vh;
-    background: url(../imagem/fita-de-fundo.jpg) center center / contain ;
-    /* width: 100%; */
+    background: url(../imagem/fita-de-fundo.jpg) center center / contain;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    /* align-items: center;
-    gap: 40px; */
 }
 
-/* .container {
-    display: flex;
-} */
-
-/* .container img{
-    /* background-image: url(../imagem/fita-de-fundo.jpg); */
-    /* background-position: center; 
-    width: 100%;
-    height: 100vh;
-}
- */
 .informacoes {
     width: 300px;
     display: flex;
@@ -28,8 +14,6 @@
     justify-content: center;
     color: #ffffff;
     gap: 15px;
-    /* margin-left: 55px;  */
-   /*  flex: 1.5; */
 }
 
 .informacoes h1 {
@@ -43,15 +27,9 @@
 }
 
 .formulario {
-    /* background-color: #ffffff ;
-    width: 340px; 
-    height: 378px; */
-   /*  padding: 20px; */
     display: flex;
-    /* flex-direction: column; */
     justify-content: center; 
     align-items: center;
-   /*  flex: 1; */
 }
 
 #formulario {
@@ -60,29 +38,28 @@
     height: 378px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    position: relative;
 }
 
 #formulario input,
 #formulario textarea,
 #formulario button {
-    /* font-weight: 700;
-    font-size: 15px; */
     border-radius: 5px;
     border: 1px solid #000000;
-
-    padding: 10px 0 10px 10px;
-    /* margin-bottom: 15px;  */
-    margin: 15px 20px;
-
-
-    /* margin-bottom: 15px; */
-    /* margin: 25px 15px; */
+    padding: 8px 10px;
+    margin: 3.5px 5px;
+    outline: none;
 }
 
 #formulario textarea {
     resize: none;
-    height: 100%;
+    height: 100px; 
 }
 
 #formulario ::placeholder {
@@ -90,10 +67,9 @@
     font-size: 15px;
 }
 
-#formulario p {
-    /* font-weight: 400; */
+#formulario span {
     font-size: 15px;
-    margin: 10px 15px;
+    padding: 0px 15px;
 }
 
 #formulario button {
@@ -103,9 +79,30 @@
     font-size: 15px;
     border: none;
     cursor: pointer;
+    margin: 10px 25px;
+}
+
+@media (max-width: 756px) {
+    .container {
+        flex-direction: column;
+    } 
 }
 
 /* mudando o input na validação. . . */
+.mensagem-erro {
+  position: absolute;
+  left: 5px;  
+  bottom: -11px;
+  color: #f52e25;
+  font-size: 8px;
+  line-height: 2.5;
+  pointer-events: none;
+  display: none;
+}
+
+.mensagem-erro.ativo {
+  display: block;
+}
 
 .input-erro {
     border: 1px solid #f52e25;
@@ -113,19 +110,4 @@
 
 .input-correto {
     border: 1px solid #00c220;
-}
-/* .informacoes {
-    /* width: 300px; */
-    /* color: #ffffff; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-} */
-
-
-@media (max-width: 756px) {
-    .container {
-        flex-direction: column;
-    }
-}
+} 

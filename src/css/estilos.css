@@ -9,27 +9,18 @@
 
 .informacoes {
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #ffffff;
-    gap: 15px;
 }
 
-.informacoes h1 {
+.informacoes h1 { 
     font-weight: 900;
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .informacoes p {
     font-weight: 400;
     font-size: 15px;
-}
-
-.formulario {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
 }
 
 #formulario {
@@ -47,11 +38,15 @@
     position: relative;
 }
 
+input,
+textarea {
+     border: 1px solid #000000; 
+}
+
 #formulario input,
 #formulario textarea,
 #formulario button {
     border-radius: 5px;
-    border: 1px solid #000000;
     padding: 8px 10px;
     margin: 3.5px 5px;
     outline: none;
@@ -92,11 +87,9 @@
 .mensagem-erro {
   position: absolute;
   left: 5px;  
-  bottom: -11px;
+  bottom: -4px;
   color: #f52e25;
   font-size: 8px;
-  line-height: 2.5;
-  pointer-events: none;
   display: none;
 }
 
@@ -104,10 +97,10 @@
   display: block;
 }
 
-.input-erro {
+.erro {
     border: 1px solid #f52e25;
 }
 
-.input-correto {
+.certo {
     border: 1px solid #00c220;
 } 

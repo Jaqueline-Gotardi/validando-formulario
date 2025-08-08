@@ -6,10 +6,10 @@ A ideia é simples: se o usuário digitar algo errado, o formulário já avisa e
 
 ## 🚀 Funcionalidades
 
-✅ Validação em tempo real dos campos;
-✅ Mensagens de erro personalizadas;
-✅ Destaque visual pros campos inválidos;
-✅ Aviso quando todos os campos estão corretos;
+1. ✅Validação em tempo real dos campos;
+2. ✅Mensagens de erro personalizadas;
+3. ✅Destaque visual pros campos inválidos;
+4. ✅Aviso quando todos os campos estão corretos;
 
 
 ## 🛠️ Tecnologias Usadas
@@ -22,7 +22,7 @@ A ideia é simples: se o usuário digitar algo errado, o formulário já avisa e
 ## 📌 O que aprendi:
 Esse projeto me ajudou a reforçar:
 
-1. 🖱 Manipulação do DOM com JavaScript;
-2. 🎯 Uso de eventos pra capturar interações;
-3. 🏷 Estrutura semântica de formulários;
-4. 💡 Melhorar a experiência do usuário (UX);
+1. Manipulação do DOM com JavaScript;
+2. Uso de eventos pra capturar interações;
+3. Estrutura semântica de formulários;
+4. Melhorar a experiência do usuário (UX);
